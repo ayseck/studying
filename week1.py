@@ -1,4 +1,3 @@
-# studying
 #n'e kadar 10'ar '10'ar hizalı yazdırma
 n=int(input("n:"))
 değer=0
