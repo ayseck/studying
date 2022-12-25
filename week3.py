@@ -88,13 +88,17 @@ print(diagonal)
 
 #GİRİLEN DEĞERİ MATRİSİN İSTENİLEN İNDEKSİNE YERLEŞTİRME
 a=[[6,4,9,2],[5,2,0,1],[4,1,2,3],[2,4,7,8]]
-s=int(input("s:"))
-m=int(input("m:"))
-n=int(input("n:"))
-for i in range(len(a)):
-    a[m][n]=s
-
-print(a)
+def değerata():
+    x=int(input("x:"))    #x ve y koordinatlarımız
+    y=int(input("y:")) 
+    b=int(input("b:"))    #b atayacağımız değer 
+    for i in range(len(a)):
+        a[x][y]=b
+    for i in range(len(a)):
+        for j in range(len(a[i])):
+            print(a[i][j],end=" ") 
+        print()
+değerata()
 
 #MATRİSİN TRANSPOZUNU ALMA
 a=[[6,4,3,4],[5,2,0,9]]
