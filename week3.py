@@ -124,6 +124,25 @@ for i in range(len(a)):
                 min=a[i][j]
 print(max,min)
 
+#MATRİSTE BOYAMA İŞLEMİ
+a=[[6,4,9,2],[5,2,0,1],[4,1,0,3],[2,0,7,8]]
+def matrisboya(): 
+    b=int(input("b:"))    
+    w=int(input("w:"))
+    for i in range(len(a)):
+        for j in range(len(a[i])):
+            if  a[i][j]==b:        
+               a[i][j]=w         
+            else:
+                pass
+
+    for i in range(len(a)):
+        for j in range(len(a[i])):
+            print(a[i][j],end=" ") 
+        print()
+matrisboya()
+
+
 
 #RECURSIVE ÖZELLİKLİ FONKSİYONLAR
 
