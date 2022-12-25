@@ -121,4 +121,35 @@ for i in range(len(a)):
 print(max,min)
 
 
+#RECURSIVE ÖZELLİKLİ FONKSİYONLAR
+
+#decimal'den binary'ye dönüşüm
+def fun(n):
+     if n==0:
+         return ;
+     fun(int(n/2));
+     print(n%2)
+ fun(11)
+
+#girilen değere göre yıldız bastırma
+def fun(n):
+     i=0;
+     if n>1:
+         fun(n-1);
+     for i in range(n):
+         print("*",end=" ")
+     print("\n")
+ fun(5)
+
+#hanoi kulesi
+ def h(n):
+     if n==1:
+         return 1
+     if n>1:
+         return 2*h(n-1)+1  
+          
+ print(h(4))
+
+
+
 
