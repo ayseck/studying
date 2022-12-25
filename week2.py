@@ -1,4 +1,4 @@
-#algorithm
+#sayılar ile algoritma çalışması
 sayı=int(input("Bir değer giriniz: "))
 x=0
 for i in range(1,sayı):
@@ -13,7 +13,8 @@ for i in range(1,sayı+1):
         print(j,end=" ")
     print()
     
-#binary to decimal
+    
+#BİNARY'DEN DECİMAL'E DÖNÜŞÜM
 s=input("İkilik sayıyı giriniz: ")
 sayac=0
 toplam=0
@@ -29,6 +30,7 @@ for j in range((sayac-1),-1,-1):
         k+=1
 print(toplam)
 
+
 #listedekieleman tekrarını bulma
 l=[1,2,3,3,4,5,3,2,2,6,7]
 
@@ -39,7 +41,8 @@ for j in range(len(l)):
             sayac+=1
     print(l[j],"=",sayac)
     
-   #CLASS ÇALIŞMASI
+    
+#CLASS ÇALIŞMASI
 import time
 class animals():
     def __init__(self,animal,name,type,colour,reproduction):
